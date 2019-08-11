@@ -77,17 +77,11 @@
   &__input:valid + &__validation {
     opacity: 0;
     visibility: hidden;
+    display: none;
   }
 
   [type="submit"] {
     margin-bottom: 1.5rem;
   }
-
-
-
-
-
-
-
 
 }

@@ -64,13 +64,16 @@ body {
   color: #fff;
   text-transform: uppercase;
   font-weight: 500;
+  display: block;
+  border: none;
+  width: 100%;
   letter-spacing: 1.3px;
   border-radius: 6px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#38cc8c), color-stop(95%, #38cc8c), color-stop(98%, #2ba671));
   background-image: linear-gradient(to bottom, #38cc8c 0%, #38cc8c 95%, #2ba671 98%);
-  text-shadow: 0 -0.1rem 0 rgba(0, 0, 0, 0.2);
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  text-shadow: 0 0.2rem 0.2rem rgba(255, 255, 255, 0.35);
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
 }
 
 .btn--jumpy:hover {
@@ -159,6 +162,7 @@ body {
 .form__input:valid + .form__validation {
   opacity: 0;
   visibility: hidden;
+  display: none;
 }
 
 .form [type="submit"] {
