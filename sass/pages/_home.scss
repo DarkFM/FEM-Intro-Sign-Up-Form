@@ -8,6 +8,11 @@ html {
   height: 90vh;
   display: flex;
   align-content: center;
+
+  @include responsive(mobile) {
+    height: 100vh;
+    padding-bottom: 5rem;
+  }   
 }
 
 .landing {
@@ -17,23 +22,39 @@ html {
   width: 75%;
   margin: auto;
 
+  @include responsive(mobile) {
+    flex-flow: column nowrap;
+    align-self: center;
+    width: 100%;
+    padding: 0;
+  }
+
   &__left,
   &__right {
     flex: 0 1 48%;
   }
 
   &__left {
-    // flex: 0 1 50%;
     display: flex;
-    // width: 50%;
     align-content: center;
-    // margin-right: 7rem;
+
+    @include responsive(mobile) {
+      margin: auto;
+      margin-bottom: 6rem;
+      flex: 0 1 100%;
+    }
   }
 
   &__info {
     margin-left: auto;
-    max-width: 54ch;
+    // max-width: 54ch;
     align-self: center;
+
+    @include responsive(mobile) {
+      text-align: center;
+      margin: auto;
+
+    }
   }
 
   .main-title {
@@ -42,10 +63,21 @@ html {
     display: inline-block;
     width: 80%;
     margin-bottom: 2rem;
+    margin-top: 5rem;
+
+    @include responsive(mobile) {
+      font-size: 3rem;
+    }
   }
 
   .main-description {
     line-height: 1.5;
+
+    @include responsive(mobile) {
+      font-size: 1.5rem;
+      max-width: 32ch;
+      margin: auto;
+    }    
   }
 
 }

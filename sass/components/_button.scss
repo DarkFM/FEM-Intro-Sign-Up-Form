@@ -12,7 +12,13 @@
 
   &--accent {
     @include button-color($color-accent, $color-white);
-    box-shadow: 0 .5rem .3rem rgba($color-black, .25)
+    box-shadow: 0 .5rem .3rem rgba($color-black, .25);
+
+    @include responsive(mobile) {
+      padding-left: 4.5rem;
+      padding-right: 4.5rem;
+      line-height: 1.6;
+    }    
   }
 
   &--jumpy {
@@ -27,6 +33,11 @@
     background-image: linear-gradient(to bottom, $color-primary-2 0%, $color-primary-2 95%, darken($color-primary-2, 10%) 98%);
     text-shadow: 0 .2rem .2rem rgba($color-white, .35);
     transition: all .15s ease;
+
+    @include responsive(mobile) {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
 
     &:hover {
       background-image: linear-gradient(to bottom, $color-primary-2-light 0%, $color-primary-2-light 95%, darken($color-primary-2-light, 20%) 98%);

@@ -7,6 +7,9 @@
   border-radius: $global-border-radius;
   box-shadow: 0 7px 2px rgba($color-black, .1);
 
+  @include responsive(mobile) {
+    margin-bottom: 6rem;
+  } 
 
   &__group {
     position: relative;
@@ -14,8 +17,6 @@
     :not(:last-child) {
       margin-bottom: 1.5em;
     }
-
-
   }
 
   &__label {
@@ -26,7 +27,7 @@
   }
 
   &__input {
-    font-weight: 500;
+    font-weight: 600;
     padding: 1.5rem 6rem 1.5rem 2.5rem;
     border-radius: 5px;
     display: block;
