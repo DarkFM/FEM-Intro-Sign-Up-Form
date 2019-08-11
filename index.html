@@ -38,24 +38,28 @@
         </a>
         <div class="form">
           <div class="form__group">
-            <input type="text" class="form__input" id="first-name" placeholder="First Name" required>
-            <label for="first-name" class="form__label">First Name</label>
+            <input type="text" class="form__input" id="first-name" placeholder="First Name" required pattern="\S+.*">
+            <!-- <label for="first-name" class="form__label">First Name</label> -->
+            <span class="form__validation small-print">First Name cannot be empty</span>
           </div>
           <div class="form__group">
-            <input type="text" class="form__input" id="last-name" placeholder="Last Name" required>
-            <label for="last-name" class="form__label">Last Name</label>
+            <input type="text" class="form__input" id="last-name" placeholder="Last Name" required pattern="\S+.*">
+            <!-- <label for="last-name" class="form__label">Last Name</label> -->
+            <span class="form__validation small-print">Last Name cannot be empty</span>
           </div>
           <div class="form__group">
             <input type="email" class="form__input" id="email" required placeholder="Email Address">
-            <label for="email" class="form__label">Email Address</label>
+            <!-- <label for="email" class="form__label">Email Address</label> -->
+            <span class="form__validation small-print">Looks like this is not an email</span>
           </div>
           <div class="form__group">
             <input type="password" class="form__input" id="password" required placeholder="Password">
-            <label for="password" class="form__label">Password</label>
+            <!-- <label for="password" class="form__label">Password</label> -->
+            <span class="form__validation small-print">Password cannot be empty</span>
           </div>
           <a href="#" type="submit" class="btn btn--jumpy">Claim your free trial</a>
-          <p class="fine-print">By clicking the button, you are agreeing to our <span
-              class="highlight highlight--primary">Terms and Services</span></p>
+          <p class="small-print fine-print">By clicking the button, you are agreeing to our <a href="#"
+              class="highlight highlight--primary">Terms and Services</a></p>
         </div>
       </div>
     </section>

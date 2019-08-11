@@ -9,11 +9,12 @@ body {
   font-weight: 600;
 
   &--primary {
+    text-decoration: none;
     color: $color-primary-1;
   }
 
 }
 
-.fine-print {
+.small-print {
   font-size: 1rem;
 }
