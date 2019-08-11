@@ -1,0 +1,56 @@
+.form {
+
+  background-color: $color-white;
+  color: $color-black;
+  width: 100%;
+  padding: 4rem 3rem;
+  border-radius: $global-border-radius;
+
+
+  &__group {
+    position: relative;
+
+    :not(:last-child) {
+      margin-bottom: 1.5em;
+    }
+
+
+  }
+
+  &__label {
+    position: absolute;
+
+
+    transition: all .5s;
+  }
+
+  &__input {
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    border: 2px solid lighten($color-neutral-2, 20%);
+    font-family: inherit;
+    // border-color: darken($color-white, 10%);
+
+    &:focus {
+      border: 2px solid lighten($color-neutral-2, 10%);
+    }
+  }
+
+
+
+  &__input:placeholder-shown ~ &__label {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+
+
+
+
+
+
+
+
+}

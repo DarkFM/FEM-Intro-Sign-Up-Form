@@ -1,0 +1,27 @@
+.row {
+  max-width: $grid-width;
+  margin: auto;
+
+  // clearfix for the parent elemtn
+  @include clearfix;
+
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  }
+
+  // style all elements with classes starting with "col-"
+  [class^="col-"] {
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
+  }
+
+  .col-1-of-2 {
+    width: calc((100% - #{$gutter-horizontal}) / 2);
+  }
+
+
+
+}

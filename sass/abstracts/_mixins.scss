@@ -1,0 +1,12 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin button-color($bg-color, $font-color) {
+  background-image: linear-gradient(to bottom, $bg-color 0%, darken($bg-color, 5%) 100%);
+  color: $font-color;
+}

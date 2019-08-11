@@ -1,0 +1,36 @@
+.btn {
+  display: block;
+  padding: 2rem 4rem;
+  border-radius: $global-border-radius;
+  margin-bottom: 3rem;
+  text-align: center;
+
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
+
+  &--accent {
+    @include button-color($color-accent, $color-white);
+    box-shadow: 0 .5rem .4rem rgba($color-black, .4)
+  }
+
+  &--jumpy {
+    @include button-color($color-primary-2, $color-white);
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+    border-radius: 6px;
+    background-image: linear-gradient(to bottom, $color-primary-2 0%, $color-primary-2 95%, darken($color-primary-2, 10%) 98%);
+    text-shadow: 0 -.1rem 0 rgba($color-black, .2);
+
+    &:hover {
+      background-image: linear-gradient(to bottom, $color-primary-2-light 0%, $color-primary-2-light 95%, darken($color-primary-2-light, 20%) 98%);
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+
+}

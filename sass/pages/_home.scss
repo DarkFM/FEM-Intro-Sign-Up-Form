@@ -1,0 +1,55 @@
+html {
+    background-image: linear-gradient(to right, rgba($color-primary-1-dark, .6) 0%, rgba($color-primary-1-dark, .6) 100%),
+    url(../images/bg-intro-desktop.png);
+    background-size: cover;
+}
+
+.main {
+  height: 90vh;
+  display: flex;
+  align-content: center;
+}
+
+.landing {
+  display: flex;
+  justify-content: space-between;
+  padding: 10rem 0;;
+  width: 70%;
+  margin: auto;
+
+  &__left,
+  &__right {
+    flex: 0 1 48%;
+  }
+
+  &__left {
+    // flex: 0 1 50%;
+    display: flex;
+    // width: 50%;
+    align-content: center;
+    // margin-right: 7rem;
+  }
+
+  &__info {
+    margin-left: auto;
+    max-width: 54ch;
+    align-self: center;
+  }
+
+  .main-title {
+    font-weight: 700;
+    font-size: 4.5rem;
+    display: inline-block;
+    width: 80%;
+    margin-bottom: 3rem;
+  }
+
+  .main-description {
+    line-height: 1.5;
+  }
+
+  .fine-print {
+    text-align: center;
+    color: $color-neutral-2;
+  }
+}
